@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "586040998189",
+    "firebase_url": "https://chartapp-ed29a.firebaseio.com",
+    "project_id": "chartapp-ed29a",
+    "storage_bucket": "chartapp-ed29a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586040998189:android:c5ae176d5faae31686fba4",
+        "android_client_info": {
+          "package_name": "com.zash.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586040998189-acalen6ks7tr0bsvtcoaq8umpd5hku80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7IORaxKT1_gUo8hG-MDj4fTIH5KkNLQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586040998189-acalen6ks7tr0bsvtcoaq8umpd5hku80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
