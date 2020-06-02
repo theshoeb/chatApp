@@ -25,7 +25,7 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
-    MaterialEditText username , email, password;
+    MaterialEditText userName , email, password;
     Button btn_register;
     FirebaseAuth mFirebaseAuth ;
     DatabaseReference mDatabaseReference;
@@ -39,7 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("register");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        username= findViewById(R.id.username);
+        userName= findViewById(R.id.username);
         email= findViewById(R.id.email);
         password= findViewById(R.id.password);
         btn_register= findViewById(R.id.btn_register);
@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String txt_username= username.getText().toString();
+                String txt_username= userName.getText().toString();
                 String txt_email=email.getText().toString();
                 String txt_password=password.getText().toString();
                 if(TextUtils.isEmpty(txt_username) || TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
@@ -67,7 +67,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void Register(final String username, String email, String password){
-            Log.d("chat","inside Register");
+        Log.d("chat","inside Register");
 
         mFirebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(RegisterActivity.this,new OnCompleteListener<AuthResult>() {
             @Override
