@@ -82,7 +82,7 @@ public class RegisterActivity extends AppCompatActivity {
                     HashMap<String,String> hashMap=new HashMap<>();
                     hashMap.put("id",userid);
                     hashMap.put("username",username);
-                    hashMap.put("imageurl","default");
+                    hashMap.put("imageURL","default");
                     mDatabaseReference.setValue(hashMap).addOnCompleteListener(RegisterActivity.this,new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
